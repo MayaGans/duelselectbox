@@ -1,0 +1,114 @@
+.chooser{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: stretch;
+}
+
+.handler{
+  margin-right: 3px;
+  cursor: move;
+}
+
+.selected-item {
+  background: rgba(102, 27, 98, 0.1);
+  border: solid rgb(102, 27, 98) 1px !important;
+  z-index: 1 !important;
+}
+
+.chooser-item:first-child {
+  margin-top: 3px;
+}
+
+.chooser-item {
+    border: solid white 1px;
+    margin-bottom: 3px;
+    padding: 0px 3px;
+    cursor: pointer;
+    margin: 0px 5px 3px 5px;
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.chooser-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.chooser-container {
+  min-width: 150px;
+}
+
+.chooser-arrow {
+  border: solid 1px rgb(153, 153, 153);
+  border-bottom: 0px;
+}
+
+.chooser-left-container select {
+  border-right: 0px;
+}
+
+.chooser-left-container .chooser-arrow {
+  border-right-width: 0px;
+}
+
+.chooser .chooser-left-container label {
+  border-right-width: 0px;
+}
+
+.chooser label {
+    border: solid 1px grey;
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.chooser-arrow {
+    border: solid 1px rgb(153, 153, 153);
+    border-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    border: solid 1;
+    justify-content: space-around;
+}
+
+.icon:first-child {
+    border-right: 1px solid grey;
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.select {
+  max-height: 300px;
+  overflow: scroll;
+  border: solid 1px rgb(153, 153, 153);
+}
+
+.chooser-right-container .select {
+  border-bottom-right-radius: 5px;
+}
+
+.chooser-left-container .select {
+  border-bottom-left-radius: 5px;
+}
+
+.chooser-left-container label {
+  border-top-left-radius: 5px;
+}
+
+.chooser-right-container label {
+  border-top-right-radius: 5px;
+}
+
+.chooser-container .select {
+  flex: 1;
+}
